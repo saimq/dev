@@ -2,17 +2,6 @@
     <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 <!-- For CAPTCHA -->
 <!-- <script src="https://www.google.com/recaptcha/api.js"></script>
-<script>
-function timestamp()
-{ 
-    var response = document.getElementById("g-recaptcha-response"); 
-    if (response == null || response.value.trim() == "") 
-    {
-    var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); 
-    } 
-    
-} setInterval(timestamp, 500); 
-</script> -->
       
     <style>
       body {
@@ -113,24 +102,8 @@ function timestamp()
     </style>
   </head>
   <body>
-      <div class="box">
-        <div class="header" style="width: 700px;">
-          <h3>Comments</h3>
-          <p1>Please add details pertaining to your feedback here</p1>
-        </div>
-        <div class="form-group left">
-          <label for="description"></label>
-          <textarea name="description" rows="3"></textarea>
-          <br>
-          <!-- <div class="g-recaptcha" data-sitekey="6LfOAQYqAAAAALf8xrY9enbGUM0LqV10SW5XkyeG"></div><br> -->
-          <input type="submit" name="submitButton" value="Submit" id="submitButton">
-        </div>
-        <div class="form-group right"></div>
-      </div>
-    </form>
     <div class="confirmation-container" id="confirmation-container" style="display: none;">
       <h2>Thank you!</h2>
-      <p id="countdown">This page will refresh in <span id="timer">5</span> seconds</p>
     </div>
 
   </body>
